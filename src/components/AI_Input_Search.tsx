@@ -1,7 +1,6 @@
-import { Globe, Paperclip, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import { useState } from "react";
 import { Textarea } from "./ui/textarea";
-import { motion, AnimatePresence } from "motion/react";
 import { cn } from "../lib/utils";
 import { useAutoResizeTextarea } from "../hooks/use-auto-resize-textarea";
 
@@ -41,7 +40,7 @@ export default function AI_Input_Search() {
             className={cn(
               "rounded-lg p-2 transition-colors flex-shrink-0",
               value
-                ? "bg-black/10 text-white "
+                ? "bg-black/10 text-white outline-none"
                 : "bg-black/10 dark:bg-white/10 text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white cursor-pointer outline-none"
             )}
             style={{ marginBottom: '2px' }}
